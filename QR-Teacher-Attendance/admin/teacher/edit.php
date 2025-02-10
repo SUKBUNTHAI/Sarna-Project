@@ -804,7 +804,7 @@
 
                          <div class="modal-body">
 
-                             <form action="edit.php " method="post" id="addForm">
+                             <form action="edit.php " method="post" id="addForm" enctype="multipart/form-data">
                                  <div class="row">
                                      <div class="col-sm-12">
                                          <div class="form-group form-group-default">

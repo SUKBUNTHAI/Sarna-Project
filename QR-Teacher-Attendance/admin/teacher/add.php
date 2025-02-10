@@ -895,7 +895,7 @@ if (isset($_POST['add'])) {
                                             id="image"
                                             type="file"
                                             class="form-control"
-                                            placeholder="Chhoose Files"
+                                            placeholder="Choose Files"
                                             required />
                                     </div>
                                 </div>

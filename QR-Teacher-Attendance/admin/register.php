@@ -100,6 +100,14 @@ if (isset($_POST['name'], $_POST['username'], $_POST['password'])) {
    // $role = $_POST['role'];
     $username = $_POST['username'];
     $password = $_POST['password'];
+$c_password= $_POST["c_password"];
+if($c_password!=$password){
+    echo"      <script>
+                alert('Password doesn't match');
+               
+            </script>";
+}else{
+
 
     try {
         $stmt = $conn->prepare("SELECT `name` FROM admin WHERE `name` =  :name ");
@@ -123,14 +131,14 @@ if (isset($_POST['name'], $_POST['username'], $_POST['password'])) {
             echo "
             <script>
                 alert('Registered Successfully!');
-                window.location.href = './index.php';
+                window.location.href = '../index.php';
             </script>
             ";
         } else {
             echo "
             <script>
                 alert('Account Already Exist!');
-           window.location.href = './index.php';
+           window.location.href = '../index.php';
             </script>
             ";
         }
@@ -139,7 +147,7 @@ if (isset($_POST['name'], $_POST['username'], $_POST['password'])) {
         $conn->rollBack();
         echo "Error: " . $e->getMessage();
     }
-
+}
 }
 
 ?>
