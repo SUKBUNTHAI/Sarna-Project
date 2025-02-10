@@ -297,12 +297,12 @@
                             <h4 class="text-section">Teacher Attendance</h4>
                         </li>
                         <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#base">
+                            <a data-bs-toggle="collapse" href="#teacher-attendance">
                                 <i class="fas fa-layer-group"></i>
                                 <p>Teacher Attendance</p>
                                 <span class="caret"></span>
                             </a>
-                            <div class="collapse" id="base">
+                            <div class="collapse" id="teacher-attendance">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
@@ -629,7 +629,7 @@
                             <!-- <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6> -->
                         </div>
                         <div class="ms-md-auto py-2 py-md-0">
-                            <a href="../admin/teacher/teacher.php" class="btn btn-label-info btn-round me-2">Manage</a>
+                            <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
                             <a href="../admin/teacher/add.php" class="btn btn-primary btn-round">Add Teacher</a>
                         </div>
                     </div>
@@ -641,7 +641,7 @@
                                         <div class="col-icon">
                                             <div class="icon-big text-center icon-primary bubble-shadow-small">
                                                 <!-- <i class="fas fa-users"></i> -->
-                                                <a href="./teacher/teacher.php">
+                                                <a href="">
                                                     <i class="fas fa-users"></i>
                                                 </a>
                                             </div>

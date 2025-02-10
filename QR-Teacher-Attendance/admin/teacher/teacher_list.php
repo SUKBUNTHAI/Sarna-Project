@@ -723,7 +723,7 @@
                                     <i class="icon-home"></i>
                                 </a>
                             </li>
-                     
+
                             <li class="separator">
                                 <i class="icon-arrow-right"></i>
                             </li>
@@ -748,7 +748,7 @@
 
                         <div class="ms-md-auto py-2 py-md-0">
                             <a href="../teacher/teacher.php" class="btn btn-label-info btn-round me-2">Manage</a>
-                            <a href="../teacher/add.php" class="btn btn-primary btn-round" >Add New</a>
+                            <a href="../teacher/add.php" class="btn btn-primary btn-round">Add New</a>
                         </div>
                     </div>
 
@@ -766,6 +766,7 @@
                                     <th>Place of Birth</th>
                                     <th>Phone Number</th>
                                     <th>Address</th>
+                                    <th>Image</th>
                                     <th style="width: 10%">Action</th>
                                 </tr>
                             </thead>
@@ -778,7 +779,7 @@
                                 foreach ($conn->query($sql) as $row) {
                                 ?>
                                     <tr>
-                                        <td><?php echo $row['t_id']; ?></td>
+                                        <td><?php echo $row['teacher_id']; ?></td>
                                         <td><?php echo $row['name']; ?></td>
                                         <td><?php echo $row['sex']; ?></td>
                                         <td><?php echo $row['age']; ?></td>
@@ -786,14 +787,18 @@
                                         <td><?php echo $row['pob']; ?></td>
                                         <td><?php echo $row['phone']; ?></td>
                                         <td><?php echo $row['address']; ?></td>
+                                        <td><img src="Images_Upload/<?php echo $row["image"] ?>" alt="" class="avatar-sm avatar-img rounded-circle"></td>
+                                        <!-- <td class="avatar-img rounded-circle"><?php echo $row['image']; ?></td> -->
+
+
 
                                         <td>
-                                       
 
-                                            <a href='edit.php?id=<?php echo $row['t_id']; ?>' >
+
+                                            <a href='edit.php?id=<?php echo $row['teacher_id']; ?>'>
                                                 <i class="fas fa-edit p-2 text-edit"></i>
                                             </a>
-                                            <a href='delete.php?id=<?php echo $row['t_id']; ?>' id="delete">
+                                            <a href='delete.php?id=<?php echo $row['teacher_id']; ?>' id="delete">
                                                 <i class="fas fa-trash p-2 text-danger"></i>
                                             </a>
 
@@ -841,8 +846,7 @@
     <!--<script src="../assets/js/plugin/datatables/datatables.min.js"></script>-->
     <!-- Kaiadmin JS -->
     <script src="../assets/js/kaiadmin.min.js"></script>
-    <?php include('modal.html'); ?>
-    <script src="teacher.js"></script>
+
 
     <script>
         $("#alert_demo_5").click(function(e) {
