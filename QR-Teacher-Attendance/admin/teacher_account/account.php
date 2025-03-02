@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Teacher Account</h1>
+    <a href="../teacher_account/logout.php">Logout</a>
 </body>
 </html>
