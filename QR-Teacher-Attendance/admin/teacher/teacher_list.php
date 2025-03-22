@@ -52,11 +52,7 @@
                 <!-- Logo Header -->
                 <div class="logo-header" data-background-color="dark">
                     <a href="../dashboard.php" class="logo">
-                        <img
-                            src="../assets/img/school-logo.png"
-                            alt="navbar brand"
-                            class="navbar-brand"
-                            height="60" />
+                        <img src="../assets/img/school-logo.png" alt="navbar brand" class="navbar-brand" height="60" />
                     </a>
                     <div class="nav-toggle">
                         <button class="btn btn-toggle toggle-sidebar">
@@ -75,56 +71,69 @@
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <ul class="nav nav-secondary">
-                        <li class="nav-item">
-                            <a
-                                data-bs-toggle="collapse"
-                                href="#dashboard"
-                                class="collapsed"
-                                aria-expanded="false">
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">Teacher Management</h4>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                                 <i class="fas fa-user"></i>
                                 <p>Teacher</p>
                                 <span class="caret"></span>
                             </a>
+
                             <div class="collapse" id="dashboard">
                                 <ul class="nav nav-collapse">
+
                                     <li>
-                                    <li>
-                                        <a href="../teacher/add.php">
+                                        <a href="../admin/teacher/add.php">
                                             <span class="sub-item">Add Teacher</span>
                                         </a>
                                     </li>
 
 
                                     <li>
-                                        <a href="../teacher/teacher_list.php">
+                                        <a href="../admin/teacher/teacher_list.php">
                                             <span class="sub-item">Teacher List</span>
                                         </a>
                                     </li>
 
 
                                     <li>
-                                        <a href="../teacher_attendance/attendance.php">
+                                        <a href="../admin/teacher_attendance/attendance.php">
                                             <span class="sub-item">Attendance</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="../teacher/qr_code.php">
+                                        <a href="../admin/teacher/qr_code.php">
                                             <span class="sub-item">QR Code</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="../teacher/report.php">
+                                        <a href="../admin/teacher/report.php">
                                             <span class="sub-item">Report</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="../teacher/teacher_account/account.php">
+                                        <a href="./teacher_account/account.php">
                                             <span class="sub-item">Account</span>
                                         </a>
                                     </li>
                                 </ul>
+
+
                             </div>
+
+
+
+
+
+
+
                         </li>
+
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
                                 <i class="fa fa-ellipsis-h"></i>
@@ -134,56 +143,24 @@
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#base">
                                 <i class="fas fa-layer-group"></i>
-                                <p>Base</p>
+                                <p>Department</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="base">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Avatars</span>
+                                            <span class="sub-item">Add Department</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Buttons</span>
+                                            <span class="sub-item">View All Department</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Grid System</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Panels</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Notifications</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Sweet Alert</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Font Awesome Icons</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Simple Line Icons</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Typography</span>
-                                        </a>
-                                    </li>
+
+
+
                                 </ul>
                             </div>
                         </li>
@@ -191,35 +168,41 @@
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#sidebarLayouts">
                                 <i class="fas fa-th-list"></i>
-                                <p>Sidebar Layouts</p>
+                                <p>Major</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="sidebarLayouts">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Sidebar Style 2</span>
+                                            <span class="sub-item">Add Major</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Icon Menu</span>
+                                            <span class="sub-item">View All Majors</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#forms">
                                 <i class="fas fa-pen-square"></i>
-                                <p>Forms</p>
+                                <p>Subject</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="forms">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Basic Form</span>
+                                            <span class="sub-item">Add Subject</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="sub-item">View All Subjects</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -228,131 +211,61 @@
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#tables">
                                 <i class="fas fa-table"></i>
-                                <p>Tables</p>
+                                <p>Rooms</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="tables">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Basic Table</span>
+                                            <span class="sub-item">Add Room</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Datatables</span>
+                                            <span class="sub-item">View All Rooms</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+
+
+
+
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">Teacher Attendance</h4>
+                        </li>
                         <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#maps">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>Maps</p>
+                            <a data-bs-toggle="collapse" href="#teacher-attendance">
+                                <i class="fas fa-layer-group"></i>
+                                <p>Teacher Attendance</p>
                                 <span class="caret"></span>
                             </a>
-                            <div class="collapse" id="maps">
+                            <div class="collapse" id="teacher-attendance">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Google Maps</span>
+                                            <span class="sub-item">Add Attendance</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Jsvectormap</span>
+                                            <span class="sub-item">View All Attendance</span>
                                         </a>
                                     </li>
+
+
+
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#charts">
-                                <i class="far fa-chart-bar"></i>
-                                <p>Charts</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="charts">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Chart Js</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Sparkline</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-desktop"></i>
-                                <p>Widgets</p>
-                                <span class="badge badge-success">4</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-file"></i>
-                                <p>Documentation</p>
-                                <span class="badge badge-secondary">1</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#submenu">
-                                <i class="fas fa-bars"></i>
-                                <p>Menu Levels</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="submenu">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a data-bs-toggle="collapse" href="#subnav1">
-                                            <span class="sub-item">Level 1</span>
-                                            <span class="caret"></span>
-                                        </a>
-                                        <div class="collapse" id="subnav1">
-                                            <ul class="nav nav-collapse subnav">
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="sub-item">Level 2</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="sub-item">Level 2</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a data-bs-toggle="collapse" href="#subnav2">
-                                            <span class="sub-item">Level 1</span>
-                                            <span class="caret"></span>
-                                        </a>
-                                        <div class="collapse" id="subnav2">
-                                            <ul class="nav nav-collapse subnav">
-                                                <li>
-                                                    <a href="#">
-                                                        <span class="sub-item">Level 2</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Level 1</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+
+
+
                     </ul>
                 </div>
             </div>

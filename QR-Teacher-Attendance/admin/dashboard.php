@@ -139,19 +139,19 @@
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#base">
                                 <i class="fas fa-layer-group"></i>
-                                <p>Faculty</p>
+                                <p>Department</p>
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="base">
                                 <ul class="nav nav-collapse">
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">Add Faculty</span>
+                                            <span class="sub-item">Add Department</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="sub-item">View All Facultys</span>
+                                            <span class="sub-item">View All Department</span>
                                         </a>
                                     </li>
 
@@ -225,70 +225,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#maps">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>Shift</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="maps">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Add Shift</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">View All Shifts</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                   
 
-                        <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#charts">
-                                <i class="far fa-chart-bar"></i>
-                                <p>Batch</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="charts">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Add Batch</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">View All Batchs</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#charts">
-                                <i class="far fa-chart-bar"></i>
-                                <p>Semester</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="charts">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">Add Semester</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="sub-item">View All Semesters</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                    
 
                         <li class="nav-section">
                             <span class="sidebar-mini-icon">
@@ -310,7 +249,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="../admin/teacher_attendance/attendance.php">
                                             <span class="sub-item">View All Attendance</span>
                                         </a>
                                     </li>
